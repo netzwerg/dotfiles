@@ -39,5 +39,7 @@ alias mb='du -kh'
 del () { /bin/mv -i ${*} ~/.Trash; }
 git config --global alias.lg "log --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative"
 
-# Load Generic Colouriser
-source "`brew --prefix grc`/etc/grc.bashrc"
+# Load Generic Colouriser on the Mac
+if [ "$(expr substr $(uname -s) 1 6)" == "Darwin" ];then
+  source "`brew --prefix grc`/etc/grc.bashrc"
+fi
