@@ -4,9 +4,11 @@
 # Environment Variables
 ###########################################################
 
+export TERM=xterm-color
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export LSCOLORS=exfxcxdxcxegedabagacad
+export LS_OPTS='--color=auto'
 export HISTFILESIZE=3333
 export DOT_FILES=$HOME/dotfiles
 
@@ -32,6 +34,7 @@ PS1="${WHITE}\u@\h:${BLUE}\w${GREEN}${GIT_STATUS} ${WHITE}${PROMPT_CHAR}"
 # Aliases & Functions (No params in Bash)
 ###########################################################
 
+alias ls='ls ${LS_OPTS}'
 alias ll='ls -alh'
 alias e=$EDITOR
 alias o=open
