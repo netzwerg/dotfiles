@@ -28,3 +28,6 @@ set clipboard=unnamed
 " Miscellaneous
 set enc=utf-8
 set term=ansi
+
+" Colorschme
+colorscheme solarized
