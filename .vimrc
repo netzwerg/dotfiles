@@ -9,7 +9,7 @@ filetype indent on
 " Turn on that syntax highlighting
 syntax on
 
-" Switching buffers when unsaved (Why is this not a default?)
+" Allow switching buffers even when unsaved
 set hidden
 
 " Don't update the display while executing macros
@@ -17,6 +17,9 @@ set lazyredraw
 
 " At least let yourself know what mode you're in
 set showmode
+
+" Always display status line (with filename and modification indicator)
+set laststatus=2
 
 " Enable enhanced command-line completion. Presumes you have compiled
 " with +wildmenu.
@@ -29,5 +32,6 @@ set clipboard=unnamed
 set enc=utf-8
 set term=ansi
 
-" Colorschme
+" Colorscheme
+let g:solarized_termtrans = 1
 colorscheme solarized
