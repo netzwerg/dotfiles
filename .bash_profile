@@ -4,6 +4,7 @@
 # Environment Variables
 ###########################################################
 
+export USER_HOME=~
 export TERM=xterm-color
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxcxegedabagacad
