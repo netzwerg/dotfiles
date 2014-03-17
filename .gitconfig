@@ -1,12 +1,13 @@
 [core]
 	excludesfile = /Users/netzwerg/.gitignore
+	autocrlf = input
 [user]
 	email = rahel.luethy@gmail.com
 	name = Rahel Lüthy
 [color]
 	ui = auto
 [alias]
-	lg = log --all --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+	lg = log --all --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
 	st = status
 	ci = commit
 	br = branch
