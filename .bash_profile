@@ -10,6 +10,7 @@ export CLICOLOR=1
 export LSCOLORS=exfxcxdxcxegedabagacad
 export HISTFILESIZE=3333
 export DOT_FILES=$HOME/dotfiles
+export EDITOR='subl -w'
 
 ## Octopress/Ruby Encoding Issues
 export LC_ALL=en_US.UTF-8
@@ -18,7 +19,7 @@ export LANG=en_US.UTF-8
 ###########################################################
 # Path
 ###########################################################
-export PATH=$PATH:/usr/local/share/npm/bin
+export PATH=~/bin:$PATH
 
 ###########################################################
 # Source
