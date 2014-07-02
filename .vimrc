@@ -33,5 +33,4 @@ set enc=utf-8
 set term=ansi
 
 " Colorscheme
-let g:solarized_termtrans = 1
-colorscheme solarized
+colorscheme monokai
