@@ -1,38 +1,47 @@
-# name: Nemo (inspired by RobbyRussel)
-function _git_branch_name
-  echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
-end
+# Based on 'Informative Git Prompt' by Mariusz Smykula <mariuszs at gmail.com>
 
-function _is_git_dirty
-  echo (command git status -s --ignore-submodules=dirty ^/dev/null)
-end
+set -g __fish_git_prompt_show_informative_status 1
+set -g __fish_git_prompt_hide_untrackedfiles 1
 
-function fish_prompt
+set -g __fish_git_prompt_color_branch magenta --bold
+set -g __fish_git_prompt_showupstream "informative"
+set -g __fish_git_prompt_char_upstream_ahead "↑"
+set -g __fish_git_prompt_char_upstream_behind "↓"
+set -g __fish_git_prompt_char_upstream_prefix ""
+
+set -g __fish_git_prompt_char_stagedstate "·"
+set -g __fish_git_prompt_char_dirtystate "+"
+set -g __fish_git_prompt_char_untrackedfiles "…"
+set -g __fish_git_prompt_char_conflictedstate "✖"
+set -g __fish_git_prompt_char_cleanstate "✔"
+
+set -g __fish_git_prompt_color_dirtystate blue
+set -g __fish_git_prompt_color_stagedstate yellow
+set -g __fish_git_prompt_color_invalidstate red
+set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
+set -g __fish_git_prompt_color_cleanstate green --bold
+
+
+function fish_prompt --description 'Write out the prompt'
+
   set -l last_status $status
-  set -l cyan (set_color -o cyan)
-  set -l yellow (set_color -o yellow)
-  set -l red (set_color -o red)
-  set -l blue (set_color -o blue)
-  set -l green (set_color -o green)
-  set -l normal (set_color normal)
 
-  if test $last_status = 0
-      set arrow "$green➜ "
-  else
-      set arrow "$red➜ "
-  end
-  set -l cwd $cyan(pwd)
-
-  if [ (_git_branch_name) ]
-    set -l git_branch $red(_git_branch_name)
-    set git_info "$blue $git_branch$blue"
-
-    if [ (_is_git_dirty) ]
-      set -l dirty "$yellow ✗"
-      set git_info "$git_info$dirty"
-    end
+  if not set -q __fish_prompt_normal
+    set -g __fish_prompt_normal (set_color normal)
   end
 
-  echo -n -s $arrow $cwd $git_info $normal ' $ '
+  # PWD
+  set_color $fish_color_cwd
+  echo -n (pwd)
+  set_color normal
+
+  printf '%s ' (__fish_git_prompt)
+
+  if not test $last_status -eq 0
+  set_color $fish_color_error
+  end
+
+  echo -n '$ '
+
+  set_color normal
 end
-
