@@ -13,3 +13,5 @@
 	br = branch
 	co = checkout
 	df = diff
+[push]
+	default = simple
