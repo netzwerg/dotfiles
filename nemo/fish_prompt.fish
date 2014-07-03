@@ -1,10 +1,10 @@
 # Based on 'Informative Git Prompt' by Mariusz Smykula <mariuszs at gmail.com>
 
-set -g __fish_git_prompt_show_informative_status 1
+set -g __fish_git_prompt_show_informative_status 'yes'
 set -g __fish_git_prompt_hide_untrackedfiles 1
 
 set -g __fish_git_prompt_color_branch magenta --bold
-set -g __fish_git_prompt_showupstream "informative"
+set -g __fish_git_prompt_showupstream none # already using informative_status
 set -g __fish_git_prompt_char_upstream_ahead "↑"
 set -g __fish_git_prompt_char_upstream_behind "↓"
 set -g __fish_git_prompt_char_upstream_prefix ""
