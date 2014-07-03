@@ -14,6 +14,7 @@ set -gx VISUAL 'subl -w'
 
 # Handy aliases
 alias e=$EDITOR
+alias ll='ls -alh'
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
