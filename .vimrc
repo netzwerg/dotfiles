@@ -32,5 +32,3 @@ set clipboard=unnamed
 set enc=utf-8
 set term=ansi
 
-" Colorscheme
-colorscheme monokai
