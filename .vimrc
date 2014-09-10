@@ -31,4 +31,10 @@ set clipboard=unnamed
 " Miscellaneous
 set enc=utf-8
 set term=ansi
+set gfn=Menlo\ Regular:h14
+set number
 
+" Practical Vim Tips - Search highlighting
+set hls
+" Practical Vim Tips - Start searching/highlighting immediately
+set incsearch
