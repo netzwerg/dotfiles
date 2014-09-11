@@ -30,11 +30,17 @@ set clipboard=unnamed
 
 " Miscellaneous
 set enc=utf-8
-set term=ansi
 set gfn=Menlo\ Regular:h14
 set number
+" Change dir to currently open editor's parent
+set autochdir
+set noswapfile
 
 " Practical Vim Tips - Search highlighting
 set hls
 " Practical Vim Tips - Start searching/highlighting immediately
 set incsearch
+
+" Color
+set t_Co=256
+colorscheme tomorrow
