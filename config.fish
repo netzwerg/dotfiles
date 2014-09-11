@@ -6,11 +6,11 @@ set fish_plugins git
 # Update the PATH to ensure Homebrew packages are used.
 set homebrew  "/usr/local/bin"
 set netzwerg  "$HOME/bin"
-set -gx PATH $netzwerg $homebrew $PATH
+set dev "$HOME/Dev"
+set -gx SCALA_HOME "$dev/scala-2.11.1"
+set -gx PATH $netzwerg $homebrew $SCALA_HOME/bin $PATH
 
-# Set default text editor to Sublime.
-set -gx EDITOR 'subl -w'
-set -gx VISUAL 'subl -w'
+set --export EDITOR "mvim -f --nomru -c 'au VimLeave * !open -a Terminal'"
 
 # Handy aliases
 alias e=$EDITOR
