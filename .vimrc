@@ -43,4 +43,7 @@ set incsearch
 
 " Color
 set t_Co=256
-colorscheme tomorrow
+colorscheme zenmachine
+
+" Filetypes
+au BufNewFile,BufRead *.scala setf scala
