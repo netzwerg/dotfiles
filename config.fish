@@ -10,10 +10,11 @@ set dev "$HOME/Dev"
 set -gx SCALA_HOME "$dev/scala-2.11.1"
 set -gx PATH $netzwerg $homebrew $SCALA_HOME/bin $PATH
 
-set --export EDITOR "mvim -f --nomru -c 'au VimLeave * !open -a Terminal'"
+set --export EDITOR "vim"
 
 # Handy aliases
-alias e=$EDITOR
+alias e=mvim
+alias mi=mvim
 alias ll='ls -alh'
 
 # Load oh-my-fish configuration.
