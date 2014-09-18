@@ -1,10 +1,25 @@
 " Forget being compatible with good ol' vi
 set nocompatible
 
-" Get that filetype stuff happening
-filetype on
-filetype plugin on
-filetype indent on
+" -- Start Vundle package management
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'terryma/vim-expand-region'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" -- End Vundle package management
 
 " Turn on that syntax highlighting
 syntax on
@@ -21,8 +36,7 @@ set showmode
 " Always display status line (with filename and modification indicator)
 set laststatus=2
 
-" Enable enhanced command-line completion. Presumes you have compiled
-" with +wildmenu.
+" Enable enhanced command-line completion.
 set wildmenu
 
 " Use system clipboard for copy/paste
@@ -32,8 +46,6 @@ set clipboard=unnamed
 set enc=utf-8
 set gfn=Menlo\ Regular:h14
 set number
-" Change dir to currently open editor's parent
-set autochdir
 set noswapfile
 
 " Practical Vim Tips - Search highlighting
@@ -41,9 +53,17 @@ set hls
 " Practical Vim Tips - Start searching/highlighting immediately
 set incsearch
 
-" Color
+" Colors
 set t_Co=256
 colorscheme zenmachine
 
 " Filetypes
 au BufNewFile,BufRead *.scala setf scala
+
+" CtrlP ignores
+set wildignore+=*.class,*.swp,*.zip
+
+" Whitespace 
+set expandtab
+set tabstop=2
+set shiftwidth=2
