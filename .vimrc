@@ -14,6 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-expand-region'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,6 +48,7 @@ set enc=utf-8
 set gfn=Menlo\ Regular:h14
 set number
 set noswapfile
+let g:netrw_dirhistmax = 0 " no more .netrwhist
 
 " Practical Vim Tips - Search highlighting
 set hls
@@ -67,3 +69,6 @@ set wildignore+=*.class,*.swp,*.zip
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" VimWiki
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
