@@ -12,9 +12,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-expand-region'
-Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/vimwiki'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,6 +49,7 @@ set clipboard=unnamed
 set enc=utf-8
 set gfn=Menlo\ Regular:h14
 set number
+set autochdir 
 set noswapfile
 let g:netrw_dirhistmax = 0 " no more .netrwhist
 
@@ -62,9 +65,6 @@ colorscheme zenmachine
 " Filetypes
 au BufNewFile,BufRead *.scala setf scala
 
-" CtrlP ignores
-set wildignore+=*.class,*.swp,*.zip
-
 " Whitespace 
 set expandtab
 set tabstop=2
@@ -72,3 +72,12 @@ set shiftwidth=2
 
 " VimWiki
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
+
+" Goyo/Limelight
+nnoremap <Leader>zen :Goyo<CR>
+let g:limelight_default_coefficient = 0.8
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
+
+" Keyboard shortcuts
+nnoremap <Leader>\ :browse oldfiles<CR>
