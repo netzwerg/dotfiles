@@ -40,6 +40,7 @@ set laststatus=2
 
 " Enable enhanced command-line completion.
 set wildmenu
+set wildmode=longest:list,full
 
 " Use system clipboard for copy/paste
 set clipboard=unnamed
