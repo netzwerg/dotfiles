@@ -48,10 +48,13 @@ set clipboard=unnamed
 " Miscellaneous
 set enc=utf-8
 set gfn=Menlo\ Regular:h14
-set number
 set autochdir 
 set noswapfile
 let g:netrw_dirhistmax = 0 " no more .netrwhist
+
+" Row/column numbers
+set ruler
+set number
 
 " Practical Vim Tips - Search highlighting
 set hls
@@ -71,7 +74,7 @@ set tabstop=2
 set shiftwidth=2
 
 " VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'ext': '.txt'}]
 
 " Goyo/Limelight
 nnoremap <Leader>zen :Goyo<CR>
@@ -79,5 +82,6 @@ let g:limelight_default_coefficient = 0.8
 autocmd User GoyoEnter Limelight
 autocmd User GoyoLeave Limelight!
 
-" Keyboard shortcuts
+" Recently used files
+set viminfo='10,<50,s10,h
 nnoremap <Leader>\ :browse oldfiles<CR>
