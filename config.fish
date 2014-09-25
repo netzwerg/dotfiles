@@ -16,6 +16,7 @@ set --export EDITOR "vim"
 alias e=mvim
 alias mi=mvim
 alias ll='ls -alh'
+alias st=stree
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
