@@ -1,31 +1,32 @@
 [core]
-	excludesfile = /Users/netzwerg/.gitignore
-	autocrlf = input
+  excludesfile = /Users/netzwerg/.gitignore
+  autocrlf = input
 [user]
-	email = rahel.luethy@gmail.com
-	name = Rahel Lüthy
+  email = rahel.luethy@gmail.com
+  name = Rahel Lüthy
 [color]
-	ui = auto
+  ui = auto
 [alias]
-	lg = log --all --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
-	st = status
-	ci = commit
-	br = branch
-	co = checkout
-	dt = difftool
+  lg = log --all --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  dt = difftool
   dts = difftool --staged
 [push]
-	default = simple
+  default = simple
 [merge]
-	tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+  tool = sourcetree
 [diff]
-  tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  tool = sourcetree
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool]
-	prompt = false
+  prompt = false
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
