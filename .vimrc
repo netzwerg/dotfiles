@@ -74,7 +74,7 @@ set tabstop=2
 set shiftwidth=2
 
 " VimWiki
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'ext': '.txt'}]
+let g:vimwiki_list = [ {'path': '~/Dropbox/vimwiki', 'path_html': '~/Dropbox/vimwiki_html', 'ext': '.md', 'custom_wiki2html': '~/.vim/bundle/vimwiki/autoload/vimwiki/pandoc.sh', 'auto_export': 1}]
 
 " Goyo/Limelight
 nnoremap <Leader>zen :Goyo<CR>
