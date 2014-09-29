@@ -28,6 +28,11 @@
   </script>
 </head>
 <body>
-  <div class="container">$body$</div>
+  <div class="container">
+    $if(diaryTitle)$
+    <h1>$diaryTitle$</h1>
+    $endif$
+    $body$
+  </div>
 </body>
 </html>
