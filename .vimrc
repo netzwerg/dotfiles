@@ -67,11 +67,12 @@ colorscheme zenmachine
 
 " Filetypes
 au BufNewFile,BufRead *.scala setf scala
+au BufNewFile,BufRead *.gradle setf groovy
 
 " Whitespace 
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 " VimWiki
 let g:vimwiki_list = [ {'path': '~/Dropbox/vimwiki', 'path_html': '~/Dropbox/vimwiki_html', 'ext': '.md', 'custom_wiki2html': '~/.vim/bundle/vimwiki/autoload/vimwiki/pandoc.py', 'auto_export': 1}]
