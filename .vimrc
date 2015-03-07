@@ -17,6 +17,7 @@ Plugin 'netzwerg/vimwiki'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -107,3 +108,7 @@ inoremap <D-S-Down> <Esc>:m .+1<CR>==gi
 inoremap <D-S-Up> <Esc>:m .-2<CR>==gi
 vnoremap <D-S-Down> :m '>+1<CR>gv=gv
 vnoremap <D-S-Up> :m '<-2<CR>gv=gv
+
+" NERDTree
+let NERDTreeShowHidden=1
+nmap <D-1> :NERDTreeToggle<RETURN>
