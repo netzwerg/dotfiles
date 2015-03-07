@@ -86,3 +86,21 @@ autocmd User GoyoLeave Limelight!
 " Recently used files
 set viminfo='10,<50,s10,h
 nnoremap <Leader>\ :browse oldfiles<CR>
+
+" Simple scrolling in blocks of 10 lines
+noremap <C-j> 010j
+noremap <C-k> 010k
+
+" Habit breaking, habit making
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" Moving lines IntelliJ-style
+nnoremap <D-S-Down> :m .+1<CR>==
+nnoremap <D-S-Up> :m .-2<CR>==
+inoremap <D-S-Down> <Esc>:m .+1<CR>==gi
+inoremap <D-S-Up> <Esc>:m .-2<CR>==gi
+vnoremap <D-S-Down> :m '>+1<CR>gv=gv
+vnoremap <D-S-Up> :m '<-2<CR>gv=gv
