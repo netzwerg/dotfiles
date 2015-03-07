@@ -16,6 +16,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'netzwerg/vimwiki'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
+Plugin 'itchyny/lightline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,9 +32,6 @@ set hidden
 
 " Don't update the display while executing macros
 set lazyredraw
-
-" At least let yourself know what mode you're in
-set showmode
 
 " Always display status line (with filename and modification indicator)
 set laststatus=2
@@ -64,6 +62,11 @@ set incsearch
 " Colors
 set t_Co=256
 colorscheme zenmachine
+highlight LineNr ctermfg=lightgrey
+highlight LineNr guifg=#eeeeee
+
+" Mode is already shown by statusline plugin
+set noshowmode  
 
 " Filetypes
 au BufNewFile,BufRead *.scala setf scala
