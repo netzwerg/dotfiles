@@ -62,9 +62,9 @@ set incsearch
 
 " Colors
 set t_Co=256
-colorscheme zenmachine
-highlight LineNr ctermfg=lightgrey
-highlight LineNr guifg=#eeeeee
+colorscheme hybrid
+highlight LineNr ctermfg=darkgrey
+highlight LineNr guifg=#333333
 
 " Mode is already shown by statusline plugin
 set noshowmode  
@@ -100,6 +100,10 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+inoremap <Up> <NOP>
+inoremap <Down> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
 
 " Moving lines IntelliJ-style
 nnoremap <D-S-Down> :m .+1<CR>==
@@ -112,3 +116,7 @@ vnoremap <D-S-Up> :m '<-2<CR>gv=gv
 " NERDTree
 let NERDTreeShowHidden=1
 nmap <D-1> :NERDTreeToggle<RETURN>
+
+" Disable scrollbars in MacVim
+set guioptions+=L
+set guioptions-=r
