@@ -62,12 +62,24 @@ set incsearch
 
 " Colors
 set t_Co=256
-colorscheme hybrid
+colorscheme zenmachine-hybrid
 highlight LineNr ctermfg=darkgrey
 highlight LineNr guifg=#333333
 
 " Mode is already shown by statusline plugin
 set noshowmode  
+let g:lightline = {
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste' ],
+            \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+            \ },
+            \ 'component': {
+            \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+            \ },
+            \ 'component_visible_condition': {
+            \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+            \ }
+            \ } 
 
 " Filetypes
 au BufNewFile,BufRead *.scala setf scala
