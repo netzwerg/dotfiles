@@ -18,6 +18,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -132,3 +133,11 @@ nmap <D-1> :NERDTreeToggle<RETURN>
 " Disable scrollbars in MacVim
 set guioptions+=L
 set guioptions-=r
+
+" Spreadsheet-like editing of tabular data
+function! Excel()
+    :setlocal shiftwidth=20
+    :setlocal softtabstop=20
+    :setlocal tabstop=20
+    :setlocal nowrap
+endfunction
