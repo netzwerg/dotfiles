@@ -143,3 +143,8 @@ function! Excel()
     :setlocal tabstop=20
     :setlocal nowrap
 endfunction
+
+" Reduce timeout after Esc
+set ttimeout
+set ttimeoutlen=20
+set notimeout
