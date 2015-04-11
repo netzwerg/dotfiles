@@ -19,6 +19,7 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jszakmeister/vim-togglecursor'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,6 +64,7 @@ set incsearch
 
 " Colors
 set t_Co=256
+let g:hybrid_use_Xresources = 1
 colorscheme zenmachine-hybrid
 highlight LineNr ctermfg=darkgrey
 highlight LineNr guifg=#333333
