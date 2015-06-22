@@ -264,14 +264,14 @@
 		<key>0x5f-0x120000</key>
 		<dict>
 			<key>Action</key>
-			<integer>29</integer>
+			<integer>28</integer>
 			<key>Text</key>
 			<string>5546AAC8-8B90-4B94-BD5C-C37BDDCFA418</string>
 		</dict>
 		<key>0x7c-0x120000</key>
 		<dict>
 			<key>Action</key>
-			<integer>28</integer>
+			<integer>29</integer>
 			<key>Text</key>
 			<string>5546AAC8-8B90-4B94-BD5C-C37BDDCFA418</string>
 		</dict>
@@ -426,7 +426,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>302</string>
+		<string>304</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -446,9 +446,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>679 62 518 278 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>219 159 924 485 0 0 1440 877 </string>
+	<string>863 233 924 485 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>768 787 384 129 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>162 91 954 570 0 0 1440 877 </string>
+	<string>176 379 954 570 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>183 68 970 536 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_194209D6-FB4E-47FC-B3B2-3C49E88B63AD</key>
@@ -1188,6 +1190,10 @@
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453234920.78633702</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>456240725.09396601</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1196,6 +1202,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -1250,7 +1258,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-17T08:17:49Z</date>
+	<date>2015-06-22T10:05:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2106,6 +2114,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20150412</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
