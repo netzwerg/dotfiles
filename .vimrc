@@ -20,6 +20,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jszakmeister/vim-togglecursor'
+Plugin 'travitch/hasksyn'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,6 +53,9 @@ set gfn=Menlo\ Regular:h14
 set autochdir 
 set noswapfile
 let g:netrw_dirhistmax = 0 " no more .netrwhist
+
+" Stop all beeping/flashing
+set noeb vb t_vb=
 
 " Row/column numbers
 set ruler
@@ -148,3 +152,7 @@ endfunction
 set ttimeout
 set ttimeoutlen=20
 set notimeout
+
+" Underline the current line with e.g. dashes
+nnoremap <C-u> yyp<c-v>$r
+inoremap <C-u> <Esc>yyp<c-v>$r
