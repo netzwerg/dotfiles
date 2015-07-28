@@ -14,6 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-surround'
 Plugin 'netzwerg/vimwiki'
+Plugin 'netzwerg/vim-zenmachine-colors'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'itchyny/lightline.vim'
@@ -69,7 +70,7 @@ set incsearch
 " Colors
 set t_Co=256
 let g:hybrid_use_Xresources = 1
-colorscheme zenmachine-hybrid
+colorscheme zenmachine
 highlight LineNr ctermfg=darkgrey
 highlight LineNr guifg=#333333
 
