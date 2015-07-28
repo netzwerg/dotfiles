@@ -23,6 +23,7 @@ alias e=mvim
 alias mi=mvim
 alias ll='ls -alh'
 alias st=stree
+alias find-note='mdfind -name notes.txt -onlyin ~ -0 | xargs -0 grep -i'
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
