@@ -21,7 +21,9 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jszakmeister/vim-togglecursor'
+Plugin 'derekwyatt/vim-scala'
 Plugin 'travitch/hasksyn'
+Plugin 'tfnico/vim-gradle' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -88,10 +90,6 @@ let g:lightline = {
             \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
             \ }
             \ } 
-
-" Filetypes
-au BufNewFile,BufRead *.scala setf scala
-au BufNewFile,BufRead *.gradle setf groovy
 
 " Whitespace 
 set expandtab
