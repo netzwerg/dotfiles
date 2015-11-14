@@ -18,18 +18,20 @@ Plugin 'netzwerg/vim-zenmachine-colors'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jszakmeister/vim-togglecursor'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'travitch/hasksyn'
 Plugin 'tfnico/vim-gradle' 
+Plugin 'ElmCast/elm-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " -- End Vundle package management
+
+let mapleader = "\<Space>"
 
 " Turn on that syntax highlighting
 syntax on
@@ -52,7 +54,7 @@ set clipboard=unnamed
 
 " Miscellaneous
 set enc=utf-8
-set gfn=Menlo\ Regular:h14
+set gfn=MonacoB2:h14
 set autochdir 
 set noswapfile
 let g:netrw_dirhistmax = 0 " no more .netrwhist
@@ -107,7 +109,7 @@ autocmd User GoyoLeave Limelight!
 
 " Recently used files
 set viminfo='10,<50,s10,h
-nnoremap <Leader>\ :browse oldfiles<CR>
+nnoremap <Leader><Leader> :browse oldfiles<CR>
 
 " Simple scrolling in blocks of 10 lines
 noremap <C-j> 010j
@@ -131,10 +133,6 @@ inoremap <D-S-Up> <Esc>:m .-2<CR>==gi
 vnoremap <D-S-Down> :m '>+1<CR>gv=gv
 vnoremap <D-S-Up> :m '<-2<CR>gv=gv
 
-" NERDTree
-let NERDTreeShowHidden=1
-nmap <D-1> :NERDTreeToggle<RETURN>
-
 " Disable scrollbars in MacVim
 set guioptions+=L
 set guioptions-=r
@@ -155,3 +153,6 @@ set notimeout
 " Underline the current line with e.g. dashes
 nnoremap <C-u> yyp<c-v>$r
 inoremap <C-u> <Esc>yyp<c-v>$r
+
+" Git
+set diffopt=vertical

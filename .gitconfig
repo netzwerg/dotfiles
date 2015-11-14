@@ -1,6 +1,7 @@
 [core]
   excludesfile = /Users/netzwerg/.gitignore
   autocrlf = input
+	commentchar = |
 [user]
   email = rahel.luethy@gmail.com
   name = Rahel Lüthy
@@ -33,3 +34,5 @@
 	trustExitCode = true
 [credential]
 	helper = osxkeychain
+[http]
+	sslVerify = false

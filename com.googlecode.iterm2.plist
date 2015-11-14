@@ -405,8 +405,14 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSColorPanelMode</key>
+	<string>1</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
+	<string>1, 4</string>
+	<key>NSFontPanelSizeSliderParams</key>
+	<string>2 0 100</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -443,14 +449,19 @@
 		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>679 62 518 278 0 0 1440 877 </string>
+	<string>794 381 518 144 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>157 265 924 485 0 0 1440 877 </string>
+	<string>247 141 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>768 787 384 129 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>212 154 954 570 0 0 1440 877 </string>
+	<string>241 329 954 548 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>183 68 970 536 0 0 1440 877 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -621,11 +632,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.097707755863666534</real>
+				<real>0.066666670143604279</real>
 				<key>Green Component</key>
-				<real>0.092142701148986816</real>
+				<real>0.066666670143604279</real>
 				<key>Red Component</key>
-				<real>0.086937598884105682</real>
+				<real>0.066666670143604279</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -681,7 +692,7 @@
 			<key>Custom Command</key>
 			<string>Yes</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -706,7 +717,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<real>0.89999997615814209</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1011,11 +1022,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Menlo-Regular 13.5</string>
+			<string>Monaco 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 13.5</string>
+			<string>Monaco 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1181,13 +1192,13 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>0.90541857481002808</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/netzwerg</string>
+			<string>/Users/netzwerg/Projects</string>
 		</dict>
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
@@ -1195,7 +1206,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453234920.78633702</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>457446815.85996801</real>
+	<real>460916271.09245098</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1260,7 +1271,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-07-01T08:26:24Z</date>
+	<date>2015-08-10T05:46:26Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
