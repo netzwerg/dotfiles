@@ -24,6 +24,7 @@ set -gx PATH $netzwerg $homebrew $SCALA_HOME/bin $XNAT_HOME/bin $PATH
 # Handy aliases
 alias e=mvim
 alias mi=mvim
+alias vi=vim
 alias ll='ls -alh'
 alias st=stree
 alias find-note='mdfind -name notes.txt -onlyin ~ -0 | xargs -0 grep -i'
