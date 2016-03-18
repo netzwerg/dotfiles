@@ -10,7 +10,7 @@ set netzwerg  "$HOME/bin"
 set dev "$HOME/Dev"
 
 set -gx EDITOR "vim"
-set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home"
+set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home"
 set -gx SCALA_HOME "$dev/scala-2.11.1"
 
 set -gx DOCKER_HOST "tcp://192.168.59.103:2376"
