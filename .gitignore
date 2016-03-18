@@ -3,3 +3,6 @@
 .swp
 .vim/bundle
 .netrwhist
+.atom/packages
+.atom/blob-store
+.atom/.apm
