@@ -40,6 +40,7 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-d': 'editor:duplicate-lines'
+  'cmd-shift-j': 'editor:join-lines'
 
 '.platform-darwin atom-text-editor':
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
