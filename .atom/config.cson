@@ -14,3 +14,5 @@
   "expand-region": {}
   welcome:
     showOnStartup: false
+  autosave:
+    enabled: true
