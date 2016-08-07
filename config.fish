@@ -11,11 +11,10 @@ set dev "$HOME/Dev"
 
 set -gx EDITOR "vim"
 set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home"
-set -gx SCALA_HOME "$dev/scala-2.11.1"
 
 set -gx GRADLE_OPTS "-Dfile.encoding=UTF-8"
 
-set -gx PATH $netzwerg $homebrew $SCALA_HOME/bin $XNAT_HOME/bin $PATH
+set -gx PATH $netzwerg $homebrew $PATH
 
 # Handy aliases
 alias e=mvim
@@ -24,6 +23,7 @@ alias vi=vim
 alias ll='ls -alh'
 alias st=stree
 alias find-note='mdfind -name notes.txt -onlyin ~ -0 | xargs -0 grep -i'
+alias scala="scala -Dscala.color"
 
 # Docker machine initialization
 eval (docker-machine env)
