@@ -23,7 +23,7 @@ alias vi=vim
 alias ll='ls -alh'
 alias st=stree
 alias find-note='mdfind -name notes.txt -onlyin ~ -0 | xargs -0 grep -i'
-alias scala="scala -Dscala.color"
+alias scala="command scala -Dscala.color"
 
 # Docker machine initialization
 eval (docker-machine env)
