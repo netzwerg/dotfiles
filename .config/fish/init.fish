@@ -1,9 +1,3 @@
-# Path to Oh My Fish install.
-set -gx OMF_PATH /Users/netzwerg/.local/share/omf
-
-# Customize Oh My Fish configuration path.
-set -gx OMF_CONFIG /Users/netzwerg/dotfiles/omf-config
-
 # Update the PATH to ensure Homebrew packages are used.
 set homebrew  "/usr/local/bin"
 set netzwerg  "$HOME/bin"
@@ -26,7 +20,4 @@ alias find-note='mdfind -name notes.txt -onlyin ~ -0 | xargs -0 grep -i'
 alias scala="command scala -Dscala.color"
 
 # Docker machine initialization
-eval (docker-machine env)
-
-# Load oh-my-fish configuration.
-source $OMF_PATH/init.fish
+# eval (docker-machine env)
