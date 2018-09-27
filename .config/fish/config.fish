@@ -11,11 +11,12 @@ set -gx GRADLE_OPTS "-Dfile.encoding=UTF-8"
 set -gx PATH $netzwerg $homebrew $PATH
 
 # Handy aliases
-alias e=mvim
-alias mi=mvim
 alias vi=vim
 alias ll='ls -alh'
-alias st=stree
+alias gp='git push'
+alias ns='npm run start'
+alias ni='npm install'
+alias nt='npm run test'
 alias find-note='mdfind -name notes.txt -onlyin ~ -0 | xargs -0 grep -i'
 alias scala="command scala -Dscala.color"
 
