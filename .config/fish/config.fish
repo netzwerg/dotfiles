@@ -4,7 +4,6 @@ set netzwerg  "$HOME/bin"
 set dev "$HOME/Dev"
 
 set -gx EDITOR "vim"
-set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
 
 set -gx GRADLE_OPTS "-Dfile.encoding=UTF-8"
 
