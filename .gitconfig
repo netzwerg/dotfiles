@@ -1,10 +1,10 @@
 [core]
-  excludesfile = /Users/netzwerg/.gitignore
+	excludesfile = /Users/netzwerg/.gitignore_global
   autocrlf = input
 	commentchar = |
 [user]
-  email = rahel.luethy@gmail.com
-  name = Rahel Lüthy
+	email = rahel.luethy@fhnw.ch
+	name = Rahel Lüthy
 [color]
   ui = auto
 [alias]
@@ -36,3 +36,5 @@
 	helper = osxkeychain
 [http]
 	sslVerify = false
+[commit]
+	template = /Users/netzwerg/.stCommitMsg
