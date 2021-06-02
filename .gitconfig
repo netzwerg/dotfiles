@@ -38,3 +38,7 @@
 	sslVerify = false
 [commit]
 	template = /Users/netzwerg/.stCommitMsg
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
