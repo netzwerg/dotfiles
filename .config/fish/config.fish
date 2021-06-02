@@ -5,10 +5,12 @@ set dev "$HOME/Dev"
 set browser "Firefox Developer Edition"
 
 set -gx EDITOR "vim"
-
 set -gx GRADLE_OPTS "-Dfile.encoding=UTF-8"
+set -gx ANDROID_SDK_ROOT "$HOME/Library/Android/sdk"
+set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home"
+set android "$ANDROID_SDK_ROOT/tools/bin" "$ANDROID_SDK_ROOT/platform-tools" "$ANDROID_SDK_ROOT/emulator"
 
-set -gx PATH $netzwerg $homebrew $PATH
+set -gx PATH $netzwerg $homebrew $android $JAVA_HOME $PATH
 
 # Handy aliases
 alias vi=vim
