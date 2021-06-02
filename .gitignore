@@ -7,3 +7,5 @@
 .atom/blob-store
 .atom/.apm
 target/
+.config/yarn
+.idea
