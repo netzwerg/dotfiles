@@ -7,7 +7,10 @@ set browser "Firefox Developer Edition"
 set -gx EDITOR "vim"
 set -gx GRADLE_OPTS "-Dfile.encoding=UTF-8"
 set -gx ANDROID_SDK_ROOT "$HOME/Library/Android/sdk"
-set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home"
+set -gx JAVA_HOME "/Users/netzwerg/.sdkman/candidates/java/8.0.191-oracle"
+# set -gx JAVA_HOME "/System/Volumes/Data/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home"
+# set -gx JAVA_OPTS "-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee"
+set -gx JAVA_OPTS ""
 set android "$ANDROID_SDK_ROOT/tools/bin" "$ANDROID_SDK_ROOT/platform-tools" "$ANDROID_SDK_ROOT/emulator"
 
 set -gx PATH $netzwerg $homebrew $android $JAVA_HOME $PATH
