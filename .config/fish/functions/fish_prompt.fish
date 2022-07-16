@@ -1,0 +1,1 @@
+/Users/rahel.luethy@fhnw.ch/.local/share/omf/themes/nemo/fish_prompt.fish

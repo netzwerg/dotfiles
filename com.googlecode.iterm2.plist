@@ -238,7 +238,7 @@
 	<key>Default Arrangement Name</key>
 	<string>ZenMachine</string>
 	<key>Default Bookmark Guid</key>
-	<string>889C9D59-2B25-4137-B4ED-820CCC6CD3F2</string>
+	<string>5546AAC8-8B90-4B94-BD5C-C37BDDCFA418</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
@@ -605,7 +605,7 @@
 			<key>Columns</key>
 			<integer>118</integer>
 			<key>Command</key>
-			<string>/usr/local/bin/fish</string>
+			<string>/Users/rahel.luethy@fhnw.ch/bin/fish</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -959,11 +959,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>SFMono-Regular 14</string>
+			<string>SFMono-Regular 16</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SFMono-Regular 14</string>
+			<string>SFMono-Regular 16</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1135,7 +1135,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/netzwerg/Projects</string>
+			<string>/Users/rahel.luethy@fhnw.ch/Projects</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>

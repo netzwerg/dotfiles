@@ -5,6 +5,7 @@ set dev "$HOME/Dev"
 set browser "Firefox Developer Edition"
 
 set -gx EDITOR "vim"
+set -gx OMF_CONFIG "$HOME/.config/omf"
 set -gx GRADLE_OPTS "-Dfile.encoding=UTF-8"
 set -gx ANDROID_SDK_ROOT "$HOME/Library/Android/sdk"
 set -gx JAVA_HOME "/Users/netzwerg/.sdkman/candidates/java/8.0.191-oracle"
