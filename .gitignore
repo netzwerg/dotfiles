@@ -8,4 +8,5 @@
 .atom/.apm
 target/
 .config/yarn
+.config/configstore
 .idea
