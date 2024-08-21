@@ -1,0 +1,17 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+      "key": "cmd+n",
+      "command": "workbench.action.terminal.split",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "cmd+w",
+      "command": "workbench.action.terminal.kill",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "cmd+0",
+      "command": "workbench.action.terminal.toggleTerminal"
+    }
+]

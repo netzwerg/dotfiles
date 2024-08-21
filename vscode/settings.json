@@ -1,0 +1,45 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Unwind Light",
+  "terminal.integrated.fontSize": 14,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "SF Mono",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "git.openRepositoryInParentFolders": "always",
+  "cursor.cpp.disabledLanguages": [],
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.profiles.osx": {
+    "fish": {
+      "path": "/Users/rahel.luethy@fhnw.ch/bin/fish"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "editor.formatOnType": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.blame.heatmap.enabled": false,
+  "gitlens.blame.highlight.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "editor.renderWhitespace": "none",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "workbench.settings.openDefaultKeybindings": true,
+  "prettier.requireConfig": true,
+  "explorer.confirmDelete": false,
+  "workbench.tree.indent": 20
+}
