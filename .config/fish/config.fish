@@ -39,3 +39,16 @@ source $HOME/dotfiles/.config/iterm2/iterm.fish
 # Google Cloud SDK configuration
 set -x PATH $PATH $HOME/google-cloud-sdk/bin
 
+# Particularly useful when copy/pasting from MacOS Notes app.
+function clean_clipboard
+    # Get clipboard content, replace Unicode line separator (U+2028) with a normal newline, and copy back
+    pbpaste | python3 -c 'import sys; print(sys.stdin.read().replace("\u2028", "\n"))' | pbcopy
+    echo "Clipboard cleaned!"
+end
+
+if test "$TERM_PROGRAM" = "vscode"
+    source $HOME/dotfiles/.config/fish/functions/vscode_prompt.fish
+end
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/rahel.luethy@fhnw.ch/.cache/lm-studio/bin
+set -gx VIRTUAL_ENV_DISABLE_PROMPT 1

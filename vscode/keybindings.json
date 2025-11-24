@@ -2,6 +2,14 @@
 [
     {
       "key": "cmd+n",
+      "command": "explorer.newFile"
+    },
+    {
+      "key": "cmd+shift+n",
+      "command": "explorer.newFolder"
+    },
+    {
+      "key": "cmd+n",
       "command": "workbench.action.terminal.split",
       "when": "terminalFocus"
     },
@@ -13,5 +21,32 @@
     {
       "key": "cmd+0",
       "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "alt+tab",
+      "command": "workbench.action.focusNextGroup",
+      "when": "editorFocus"
+    },
+    {
+      "key": "shift shift",
+      "command": "workbench.action.quickOpen"
+    },
+    {
+      "key": "cmd+o",
+      "command": "-workbench.action.showAllSymbols"
+    },
+    {
+      "key": "ctrl+alt+o",
+      "command": "-editor.action.organizeImports",
+      "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    },
+    {
+      "key": "alt+cmd+i",
+      "command": "-workbench.action.toggleDevTools",
+      "when": "isDevelopment"
+    },
+    {
+      "key": "cmd+i",
+      "command": "composerMode.agent"
     }
 ]

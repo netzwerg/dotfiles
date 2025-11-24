@@ -4,7 +4,7 @@
   "terminal.integrated.fontSize": 14,
   "editor.fontSize": 14,
   "editor.fontFamily": "SF Mono",
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "files.autoSaveDelay": 500,
   "git.openRepositoryInParentFolders": "always",
   "cursor.cpp.disabledLanguages": [],
@@ -41,5 +41,35 @@
   "workbench.settings.openDefaultKeybindings": true,
   "prettier.requireConfig": true,
   "explorer.confirmDelete": false,
-  "workbench.tree.indent": 20
+  "workbench.tree.indent": 20,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  "extensions.ignoreRecommendations": true,
+  "typescript.experimental.updateImportsOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+  },
+  "scm.alwaysShowRepositories": true,
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "git.confirmSync": false,
+  "window.titleBarStyle": "native",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorCustomizations": {
+      "editor.selectionBackground": "#713A9133",
+      "list.hoverBackground": "#D0D0D9",
+      "list.activeSelectionBackground": "#FEE9FF",
+      "list.activeSelectionForeground": "#000000",
+      "list.focusOutline": "#713A9133",
+      "quickInputList.focusBackground": "#D0D0D9"   
+  },
+  "typescript.tsserver.experimental.useVsCodeWatcher": false,
+  "window.openFoldersInNewWindow": "on",
+  "window.newWindowDimensions": "maximized",
+  "cursor.composer.textSizeScale": 1.15,
+  "diffEditor.maxComputationTime": 0,
+  "git.ignoreMissingGitWarning": true,
+  "window.zoomLevel": 2
 }
